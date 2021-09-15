@@ -1,7 +1,0 @@
-#!/bin/bash
-dir=$1
-for f in `ls $dir/*`
-do
-    echo $f
-    ../python/acceval.py $f ../python/cache/taxi-percentage.json 0.1
-done
